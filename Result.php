@@ -1,4 +1,4 @@
-<?php include '/Function/ConnDatabase.php'; ?>
+<?php include 'conndatabase.php'; ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -8,7 +8,7 @@
 <body>
 	<div id="wrapper">
 		<div id="header">
-			<?php include "Header.php"; ?>
+			<?php include "header.php"; ?>
 		</div>
 
 		<div id="menu_content">
@@ -25,7 +25,7 @@
 							echo "<h4 class='menu_content_header'>Pencarian Berdasarkan Kode Soal</h4>";
 		                    while ($data = mysqli_fetch_assoc($query)) {
 		                        echo "<div class='category' >";
-		                        echo "<h4><a href='DetailGroupSoal.php?kategori=".$data['idkategorisoal']."#1'>".$data['kategori']."</a></h4>";
+		                        echo "<h4><a href='detailgroupsoal.php?kategori=".$data['idkategorisoal']."#1'>".$data['kategori']."</a></h4>";
 		                        echo "<p>Kode Soal : <span style='background-color: yellow'>".$data['kodekategori']."</span></p></br>";
 		                        echo "</div>";
 		                    }
@@ -52,7 +52,7 @@
 
 								echo "<div class='detail_result' >";
 								echo "<p>".$higlight."</p><br>";
-								echo "<a href='DetailSoal.php?soal=".$data['idsoal']."'>Detail Soal</a>";
+								echo "<a href='detailsoal.php?soal=".$data['idsoal']."'>Detail Soal</a>";
 								echo "</div>";
 
 								$existId .= $data['idsoal']." ";
@@ -91,14 +91,14 @@
 
 									echo "<div class='detail_result' >";
 									echo "<p>".$higlightData."</p><br>";
-									echo "<a href='DetailSoal.php?soal=".$data['idsoal']."'>Detail Soal</a>";
+									echo "<a href='detailsoal.php?soal=".$data['idsoal']."'>Detail Soal</a>";
 									echo "</div>";
 									$countResult++;
 								}
 							}
 						}
 					}else{
-						header("Location: "."Index.php");
+						header("Location: "."index.php");
 					}
 				?>
 			</div>
@@ -116,7 +116,7 @@
 		</div>
 
 		<div id="footer">
-			<?php include "Footer.html" ?>
+			<?php include "footer.html" ?>
 		</div>
 	</div>
 </body>

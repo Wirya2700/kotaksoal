@@ -1,4 +1,4 @@
-<?php include '/Function/ConnDatabase.php'; ?>
+<?php include 'conndatabase.php'; ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -8,7 +8,7 @@
 <body>
 	<div id="wrapper">
       <div id="header">
-         <?php include "Header.php"; ?>
+         <?php include "header.php"; ?>
       </div>
       
       <?php 
@@ -70,7 +70,7 @@
                   echo "<li><a href='#$index'>$index. ".substr($data1['soal'], 0,45)."...</a></li>";
                   echo "<div id='$index' class='accordion'>";
                   echo "<p>".$data1['soal'];
-                  echo " <a href='DetailGroupSoal.php?kategori=".$data1['idkategorisoal']."&detailkategori=".$data1['iddetailkategorisoal']."#$index'>Penjelasan</a></p>";
+                  echo " <a href='detailgroupsoal.php?kategori=".$data1['idkategorisoal']."&detailkategori=".$data1['iddetailkategorisoal']."#$index'>Penjelasan</a></p>";
                   echo "</div>";
                   $index++;
                }
@@ -80,12 +80,12 @@
                echo "</div>";
             }
          }else{
-            header("Location: "."Index.php");
+            header("Location: "."index.php");
          }
       ?>
 
       <div id="footer">
-         <?php include "Footer.html" ?>
+         <?php include "footer.html" ?>
       </div>
 
    </div>

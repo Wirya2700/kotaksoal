@@ -1,4 +1,4 @@
-<?php include '/Function/ConnDatabase.php'; ?>
+<?php include 'conndatabase.php'; ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -8,7 +8,7 @@
 <body>
 	<div id="wrapper">
         <div id="header">
-                <?php include "Header.php"; ?>
+                <?php include "header.php"; ?>
         </div>
 
         <div id="menu_content">
@@ -17,7 +17,7 @@
                     $query = mysqli_query($mysqli ,"SELECT * FROM kategorisoal WHERE type LIKE'%SLTA%' ORDER BY waktu limit 10");
                     while ($data = mysqli_fetch_assoc($query)) {
                         echo "<div class='category' >";
-                        echo "<h4><a href='DetailGroupSoal.php?kategori=".$data['idkategorisoal']."#1'>".$data['kategori']."</a></h4>";
+                        echo "<h4><a href='detailgroupsoal.php?kategori=".$data['idkategorisoal']."#1'>".$data['kategori']."</a></h4>";
                         echo "<p>Kode Soal : ".$data['kodekategori']."</p></br>";
                         echo "</div>";
                     }
@@ -36,7 +36,7 @@
         </div>
 
         <div id="footer">
-                <?php include "Footer.html"; ?>
+                <?php include "footer.html"; ?>
         </div>
     </div>
 </body>

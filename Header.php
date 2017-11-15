@@ -1,6 +1,6 @@
 <div id="menuheader">
 	<h3><a href="index.php">Soal</a></h3>
-	<form method="POST" action="Result.php">
+	<form method="POST" action="result.php">
 		<input type="search" name="cari" placeholder="Masukan Kode atau Soal di sini" width="100px" 
 		<?php 
 			if(!empty($_POST)){

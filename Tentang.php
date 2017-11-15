@@ -1,4 +1,4 @@
-<?php include '/Function/ConnDatabase.php'; ?>
+<?php include 'conndatabase.php'; ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -8,7 +8,7 @@
 <body>
 	<div id="wrapper">
       <div id="header">
-         <?php include "Header.php"; ?>
+         <?php include "header.php"; ?>
       </div>
       
       <div id="menu_content">
@@ -50,7 +50,7 @@
       </div>
 
       <div id="footer">
-         <?php include "Footer.html" ?>
+         <?php include "footer.html" ?>
       </div>
 
    </div>
